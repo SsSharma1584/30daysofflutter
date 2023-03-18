@@ -4,11 +4,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_catlog/widgets/drawer.dart';
 
+import '../models/catalog.dart';
+import '../widgets/item_widget.dart';
+
 class HomePage extends StatelessWidget {
   final int days = 30;
   final String name = 'SsSharma';
   @override
   Widget build(BuildContext context) {
+    final dummyList = List.generate(10, (index) => CatalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -16,11 +20,13 @@ class HomePage extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: Center(
-        child: Container(
-          child: Text(context.runtimeType.toString()),
-        ),
-      ),
+      body: ListView.builder(
+          itemCount: dummyList.length,
+          itemBuilder: ((context, index) {
+            return ItemWidget(
+              item: dummyList[index],
+            );
+          })),
       drawer: MyDrawer(),
     );
   }
