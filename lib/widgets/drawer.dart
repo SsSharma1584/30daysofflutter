@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, duplicate_ignore, prefer_const_declarations
+
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
