@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors, unused_local_variable, prefer_const_constructors
+// ignore_for_file: use_key_in_widget_constructors, unused_local_variable, prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
 import 'package:flutter_catlog/Pages/home_page.dart';
@@ -20,9 +20,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: MyTheme.lightTheme(context),
-      initialRoute: MyRoutes.loginRoute,
+      initialRoute: MyRoutes.homeRoute,
       routes: {
-        "/": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => LoginPage(),
       },

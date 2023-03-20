@@ -1,33 +1,69 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, unnecessary_import, use_key_in_widget_constructors
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_catlog/widgets/drawer.dart';
-
+import 'package:flutter/services.dart';
+import 'dart:convert';
 import '../models/catalog.dart';
-import '../widgets/item_widget.dart';
+import 'package:velocity_x/velocity_x.dart';
+import '../widgets/home_widgets/catalog_header.dart';
+import '../widgets/home_widgets/catalog_list.dart';
+import '../widgets/themes.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   final int days = 30;
+
   final String name = 'SsSharma';
+
+  @override
+  void initState() {
+    super.initState();
+    loadData();
+  }
+
+  loadData() async {
+    await Future.delayed(const Duration(seconds: 2));
+    final catalogJson = await rootBundle.loadString("assets/catalog.json");
+    final decodedData = jsonDecode(catalogJson);
+    var productsData = decodedData["products"];
+    CatalogModel.items = List.from(productsData)
+        .map<Item>((item) => Item.fromMap(item))
+        .toList();
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
-    final dummyList = List.generate(10, (index) => CatalogModel.items[0]);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Catlog App',
-          style: TextStyle(color: Colors.black),
-        ),
-      ),
-      body: ListView.builder(
-          itemCount: dummyList.length,
-          itemBuilder: ((context, index) {
-            return ItemWidget(
-              item: dummyList[index],
-            );
-          })),
-      drawer: MyDrawer(),
-    );
+      backgroundColor: MyTheme.creamColor,
+        body: SafeArea(
+          child: Container(
+            padding: Vx.m32,
+             child: Column(
+               
+               children: [
+                 CatalogHeader(),
+                 if(CatalogModel.items!=null && CatalogModel.items!.isNotEmpty)
+                   CatalogList().expand()
+                 else
+                    CircularProgressIndicator().centered().expand(),
+
+               ],
+             ),
+          ),
+        ));
   }
 }
+
+
+
+
+
+
+
+
+
