@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_catlog/Pages/home_page.dart';
 import 'package:flutter_catlog/util/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -30,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: context.canvasColor,
       child: SingleChildScrollView(
         child: Form(
           key: _formkey,
@@ -84,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                     InkWell(
                       onTap: () => moveToHome(context),
                       child: AnimatedContainer(
-                        duration: Duration(seconds: 2),
+                        duration: Duration(seconds: 1),
                         height: 50,
                         width: changeButton ? 50 : 150,
                         child: changeButton
@@ -98,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: Colors.deepPurple,
+                          color: context.theme.buttonColor,
                           borderRadius:
                               BorderRadius.circular(changeButton ? 20 : 8),
                         ),
