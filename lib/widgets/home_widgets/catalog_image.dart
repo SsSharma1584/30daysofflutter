@@ -9,6 +9,6 @@ const CatalogImage({super.key, required this.image}):assert(image!=null);
 Widget build(BuildContext context) {
 return Image.network(
 image,
-).box.rounded.p8.color(MyTheme.creamColor).make().p16().w40(context);
+).box.rounded.p8.color(context.canvasColor).make().p16().w40(context);
 }
 }

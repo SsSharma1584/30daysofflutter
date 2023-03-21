@@ -6,7 +6,7 @@
             "desc": "Apple iPhone 12th generation",
             "price": 999,
             "color": "#33505a",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISJ6msIu4AU9_M9ZnJVQVFmfuhfyJjEtbUm3ZK11_8IV9TV25-1uM5wHjiFNwKy99w0mR5Hk&usqp=CAc"
+            "image": "https://celularess.com/wp-content/uploads/2020/12/Apple-iPhone-12-Pro.png"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "desc": "Google Pixel phone 5th generation",
             "price": 699,
             "color": "#00ac51",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd0JhwLvm_uLDLc-la7hK9WyVpe9naJFcebKfhcICiq2KtvXDePNAU_9QO06LPcQ0K0fLByc7m&usqp=CAc"
+            "image": "https://lh3.googleusercontent.com/M4SHUqpEgLy-VMVkR3xrNeKpSadd0Tnck5OKdLMWi3TSElhWpRAMYuTGFxGicseUCdE59h6vYYDlyAkdDTyAoTMzJ7DZI65cE3oqLN_KCztfwJe4o213eFWevw=s800-c"
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "desc": "Apple Macbook air with apple silicon",
             "price": 1099,
             "color": "#e0bfae",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOMstwtmLnjFb3NHiDJ_kcQnueNVH-rv_3ps96HZmXlFumKWaiBqq_L4Uoyx3iFiNTrXNEbyB&usqp=CAc"
+            "image": "https://thegoodguys.sirv.com/products/50073770/50073770_751215.PNG?profile=social"
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "desc": "Sony Playstation 5th generation",
             "price": 500,
             "color": "#544ee4",
-            "image": "https://akket.com/wp-content/uploads/2020/04/Sony-PlayStation-5-i-PlayStation-5-Pro-9-1.jpg"
+            "image": "https://consoletradein.co.uk/wp-content/uploads/2020/07/PlaySTation-5.png"
         },
         {
             "id": 5,
@@ -38,7 +38,7 @@
             "desc": "Apple Aipods Pro 1st generation",
             "price": 200,
             "color": "#e3e4e9",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQROEs084z65psoo06zYl5R0tUzywOVKVQZzmzqCj3PDP1vVJTWv3gGwGMFENSy4qV4n7sEQjE&usqp=CAc"
+            "image": "https://www.i-connect.ie/resources/airpods-pro/images/S1_Image.png"
         },
         {
             "id": 6,
@@ -46,7 +46,7 @@
             "desc": "Apple iPad Pro 2020 edition",
             "price": 799,
             "color": "#f73984",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzUeRQ5uH7E3hpECib8qxdhfHv6SnUGT7mOsew_xiOoqRR7ZpdH-TQ4J6-HuIEfqHimYyPXWH&usqp=CAc"
+            "image": "https://astorekw.com/web/image/product.template/41520/image?unique=67669d7"
         },
         {
             "id": 7,
@@ -54,7 +54,7 @@
             "desc": "Samsung Galaxy S21 Ultra 2021 edition",
             "price": 1299,
             "color": "#1c1c1c",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_PZcc0wicVYR992s5QCIDLYy8t-z-9kibTUdWZBN2sd86aaqdAJfhvxAwZNWV9wfdzDikpr1&usqp=CAc"
+            "image": "https://v1.vodafone.it/portal/resources/media/Images/demag/smartphone/samsung-galaxy-s21-ultra-black-729x726-backside.png"
         },
         {
             "id": 8,
@@ -62,7 +62,7 @@
             "desc": "Samsung Galaxy S21 2021 edition",
             "price": 899,
             "color": "#7c95eb",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNHd7FwarbxA1xdMFt24KazjcR4dWPH_t_T5dz4YNK1s7rJAQ8gOIuR_NRw6eeiQgFhbZ9sAN&usqp=CAc"
+            "image": "https://th.bing.com/th/id/R.b7add41ec2cac0bf80d88932603c359a?rik=B2XSq9ib8aFzAw&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f6220b2be912013c51947f9db.png&ehk=fUt8tTycyocFVafo7OQvOqTd9XDy%2fRAruuIZ5K2GlqU%3d&risl=&pid=ImgRaw&r=0"
         }
     ]
 }
