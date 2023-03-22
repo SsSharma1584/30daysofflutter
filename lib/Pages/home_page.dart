@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: context.theme.buttonColor,
 
           child: Icon(CupertinoIcons.cart, color: Colors.white,),
-        ),
+),
         body: SafeArea(
           child: Container(
             padding: Vx.m32,
